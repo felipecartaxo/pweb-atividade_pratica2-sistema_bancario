@@ -24,4 +24,7 @@ class Cliente {
     imprimirDadosCliente() {
         return `${this._nome} | ${this._cpf}`;
     }
+    toString() {
+        return `Nome: ${this._nome} - CPF: ${this._cpf} `;
+    }
 }
