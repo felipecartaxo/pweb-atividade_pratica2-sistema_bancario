@@ -1,0 +1,27 @@
+body {
+    max-width: 40%;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario > div {
+    margin-top: 10px;
+}
+
+.formulario-cpf > input {
+    margin-left: 11px;
+}
+
+.botoes {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.botao-listar > button {
+    margin-left: 20px;
+}
