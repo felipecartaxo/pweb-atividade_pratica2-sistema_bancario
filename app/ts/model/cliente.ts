@@ -33,4 +33,8 @@ class Cliente {
     set conta(novaConta: Conta) {
         this._conta = novaConta;
     }
+
+    imprimirDadosCliente() {
+        return `${this._nome} | ${this._cpf}`;
+    }
 }

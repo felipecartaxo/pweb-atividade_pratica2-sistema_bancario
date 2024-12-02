@@ -4,12 +4,23 @@ class Clientes {
     private clientes: Array<Cliente>;
 
     constructor() {
-        this.clientes = new Array<Cliente>;
+        this.clientes = new Array<Cliente>();
     }
 
     // Requisio 2.3: Implementação do listar(), que deve retornar um array de Cliente
     listar(): Array<Cliente> {
         return this.clientes
+    }
+
+    // Método para listar os dados de cada cliente
+    listarDadosClientes(): string {
+        let dadosClientes = "";
+
+        for (let cliente of this.clientes) {
+            dadosClientes += ", " + cliente.nome;
+        }
+
+        return dadosClientes;
     }
 
     // Requisito 2.1: Implementação do método inserir(), que recebe um Cliente e o armazenará no array de clientes
