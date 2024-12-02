@@ -17,7 +17,7 @@ class Clientes {
         let dadosClientes = "";
 
         for (let cliente of this.clientes) {
-            dadosClientes += ", " + cliente.nome;
+            dadosClientes += cliente.nome + " | ";
         }
 
         return dadosClientes;
