@@ -1,13 +1,22 @@
 class ClienteEspecial extends Cliente {
-
     // Atributos
-    private _dependentes: Array<Cliente>;
+    private dependentes: Array<Cliente>;
 
     constructor(nome: string, cpf: string) {
         super(nome, cpf);
+        this.dependentes = new Array<Cliente>;
+        
     }
 
-    get dependentes() {
-        return this._dependentes;
+    get listar(): Array<Cliente> {
+        return this.dependentes;
+    }
+
+    adicionarDependente(dependente: Cliente) {
+        if (this.cpf === dependente.cpf) {
+            throw new Error("Não é possível cadastrar o titular como dependente")
+        }
+
+        this.dependentes.push(dependente);
     }
 }

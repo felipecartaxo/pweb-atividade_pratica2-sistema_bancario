@@ -5,4 +5,10 @@ class ClienteEspecial extends Cliente {
     get dependentes() {
         return this._dependentes;
     }
+    adicionarDependente(cliente) {
+        if (this.cpf === cliente.cpf) {
+            throw new Error("Não é possível cadastrar o titular como dependente");
+        }
+        this._dependentes.push(cliente);
+    }
 }
