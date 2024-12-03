@@ -11,7 +11,7 @@ class Clientes {
     listarDadosClientes() {
         let dadosClientes = "";
         for (let cliente of this.clientes) {
-            dadosClientes += cliente.nome + " | ";
+            dadosClientes += cliente.toString() + "| ";
         }
         return dadosClientes;
     }

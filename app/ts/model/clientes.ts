@@ -1,6 +1,6 @@
 // Requisito 2: Desenvolver a classe cliente
 class Clientes {
-    // Que armazenará todos os clientes
+    // Atributos
     private clientes: Array<Cliente>;
 
     constructor() {
@@ -17,7 +17,7 @@ class Clientes {
         let dadosClientes = "";
 
         for (let cliente of this.clientes) {
-            dadosClientes += cliente.nome + " | ";
+            dadosClientes += cliente.toString() + "| ";
         }
 
         return dadosClientes;

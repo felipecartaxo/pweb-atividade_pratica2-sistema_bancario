@@ -18,4 +18,4 @@ cli.remover("99999");
 console.log(`Listando clientes após a remoção: ${cli.listarDadosClientes()}`);
 // Pesquisando por um dos clientes
 let cliTemp = cli.pesquisar("12345");
-console.log(`Listando um dos clientes: ${cliTemp.imprimirDadosCliente()}`);
+console.log(`Listando um dos clientes: ${cliTemp.toString()}`);

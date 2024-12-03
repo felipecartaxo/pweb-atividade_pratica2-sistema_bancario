@@ -5,11 +5,13 @@ class Cliente {
     private _cpf: string;
     private _conta: Conta;
 
+    // Construtor
     constructor(nome: string, cpf: string) {
         this._nome = nome;
         this._cpf = cpf;
     }
 
+    // Getters e setters
     get nome(): string {
         return this._nome;
     }
@@ -34,11 +36,13 @@ class Cliente {
         this._conta = novaConta;
     }
 
-    imprimirDadosCliente() {
-        return `${this._nome} | ${this._cpf}`;
-    }
+    // Método para imprimir os dados do cliente
+    // imprimirDadosCliente(): string {
+    //     return `${this._nome} | ${this._cpf}`;
+    // }
 
-    toString() {
+    // toString
+    toString(): string {
         return `Nome: ${this._nome} - CPF: ${this._cpf} `;
     }
 }

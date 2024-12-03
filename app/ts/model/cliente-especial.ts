@@ -4,8 +4,7 @@ class ClienteEspecial extends Cliente {
 
     constructor(nome: string, cpf: string) {
         super(nome, cpf);
-        this.dependentes = new Array<Cliente>;
-        
+        this.dependentes = new Array<Cliente>();
     }
 
     get listar(): Array<Cliente> {
